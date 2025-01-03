@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styly.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BIKEMANIA Shop</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header_div">
+            <div class="dohromady_dva">
+            <img src="../obrázky/logo.png" alt="" class="osobni_logo">
+            <span class="header_nazev">BIKEMANIA Shop</span>
+            </div>
+            <img class="menu-icon" src="../obrázky/menu_icon.png" alt="" onclick="menutoggle()">
+            </div>
+            
+            <ul id="MenuItems" class="nav__link--list">
+                <li class="nav_link"><a class="nav__link--anchor link__hover-effect " href="index.html">Domů</a></li>
+                <li class="nav_link"><a class="nav__link--anchor link__hover-effect"  href="obchod.html">Obchod</a></li>
+                <li class="nav_link"><a class="nav__link--anchor link__hover-effect" href="hodnoceni.html">O nás</a></li>
+                <li class="nav_link"><a class="nav__link--anchor link_border" href="nakupni_kosik.html">Košík</a></li>
+                <li class="nav_link"><a class="nav__link--anchor link__hover-effect"  href="https://www.instagram.com/bikemania.shop/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                
+                
+               
+            </ul>
+        </nav>
+        
+        
+    </header>
+    <main>
+        <section id="hlavni_section">
+            <div class="container">
+                <div class="cast_jedna">
+                    <h1 class="nadpis">Nejlepší kola pro tebe</h1>
+                    <p class="podnadpis">Obchod s cyklistickým zbožím a cykloservisem v Novém Jičíně</p>
+                    <a class="button" href="obchod.html">Nakupuj hned &#8594;</a>
+                </div>
+                <div class="cast_dva">
+                    <img class="kolo_image" src="/obrázky/kolo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="treti_section">
+            <div class="maly_container">
+                <h2 class="title">Doporučené produkty</h2>
+                <div class="row_dva">
+                    <div class="sloupec">
+                        <img src="../obrázky/kolo_1.jpg" alt="">
+                        <h4>NIMBA 29 černá XL</h4>
+                        <div class="hodnoceni">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p class="cena">7 990 Kč</p>
+                    </div>
+
+                    <div class="sloupec">
+                        <img src="../obrázky/dres_1.jpg" alt="">
+                        <h4>Dětský dres Klimatex</h4>
+                        <div class="hodnoceni">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p class="cena">399 Kč</p>
+                    </div>
+
+                    <div class="sloupec">
+                        <img src="../obrázky/kolo_2.jpg" alt="">
+                        <h4>APO 29 žluté M</h4>
+                        <div class="hodnoceni">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p class="cena">8 990 Kč</p>
+                    </div>
+
+                    <div class="sloupec">
+                        <img src="../obrázky/dres_2.jpg" alt="">
+                        <h4>Pánský dres Etape COMFORT</h4>
+                        <div class="hodnoceni">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p class="cena">749 Kč</p>
+                    </div>
+
+        
+                </div>
+            </div>
+        </section>
+
+        <section id="druha_section">
+            <div class="row">
+                <h2 class="title">Co vám dále můžeme nabídnout</h2>
+                <div class="druhy">
+                    <div class="druh">
+                        <img src="../obrázky/znak1.png" alt="">
+                        <h5>Udržování & Opravy</h5>
+                    </div>
+                    <div class="druh">
+                        <img src="../obrázky/znak2.png" alt="">
+                        <h5>Bezpečností Doplňky</h5>
+                    </div>
+                    <div class="druh">
+                        <img src="../obrázky/znak3.png" alt="">
+                        <h5>Zakázkové práce</h5>
+                    </div>
+                    <div class="druh">
+                        <img src="../obrázky/znak4.png" alt="">
+                        <h5>Oblečení & Vybavení</h5>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>

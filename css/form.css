@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Outfit";
+    
+    background: linear-gradient(#ffdad5,#fff7f9);
+}
+.kontakt-container{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.kontakt-levy{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px;
+}
+
+.kontakt-levy-nadpis h2{
+    font-weight: 600;
+    color:#a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.kontakt-levy-nadpis hr{
+    border:none;
+    width:120px;
+    height:5px;
+    background: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.kontakt-inputs{
+    width:400px;
+    height:50px;
+    border:none;
+    outline:none;
+    padding-left: 25px;
+    font-weight: 500;
+    color:#666;
+    border-radius: 50px;
+}
+.kontakt-levy textarea{
+    height:140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.kontakt-inputs:focus{
+    border:2px solid  #ff994f;
+}
+.kontakt-inputs::placeholder{
+    color:#a9a9a9;
+}
+.kontakt-levy button{
+    display:flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color:white;
+    gap:10px;
+    border:none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
+.kontakt-levy button img{
+    height:15px;
+}
+.kontakt-pravy img{
+    width:500px;
+
+}
+@media (max-width:800px) {
+    .kontakt-inputs{
+        width:80vw;
+    }
+    .kontakt-pravy{
+        display:none;
+    }
+}

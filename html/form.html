@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <div class="kontakt-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="kontakt-levy">
+            <div class="kontakt-levy-nadpis">
+                <h2>Vyplň údaje</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="e2775070-3c75-46ea-a516-9c514a4e29c6">
+            <input type="text" name="jmeno" placeholder="Jméno" class="kontakt-inputs" required>
+            <input type="email" name="email" placeholder="Email" class="kontakt-inputs" required>
+            <textarea name="message" placeholder="Poznámka" class="kontakt-inputs" required></textarea>
+            <button type="submit">Poslat <img src="../assets/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="kontakt-pravy">
+            <img src="../assets/right_img.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

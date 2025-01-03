@@ -1,0 +1,78 @@
+#nakupni_kosik{
+    width:100%;
+}
+
+.nakupni_kosik{
+    margin:80px auto;
+    width:100%;
+    max-width: 1500px;
+    
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.kosik_info{
+    display:flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color:white;
+    background-color: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding:10px 5px;
+}
+td input{
+    width:40px;
+    height:30px;
+    padding:5px;
+}
+td a{
+    color:#ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width:80px;
+    height:80px;
+    margin-right: 10px;
+}
+
+.celkova_cena{
+    display:flex;
+    justify-content: flex-end;
+}
+.celkova_cena table{
+    border-top: 3px solid #ff523b;
+    width:100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.celkova_cena button{
+    width:100%;
+    max-width: 100px;
+    padding:10px 30px;
+    background-color: orangered;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 350ms ease;
+    color:#fff;
+    
+    
+   
+}
+.celkova_cena button:hover{
+    background-color: orange;
+
+}

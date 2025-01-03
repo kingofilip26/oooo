@@ -1,0 +1,269 @@
+body{
+    height:100%;
+}
+
+#hodnoceni{
+    width:100%;
+    background: radial-gradient(#fff, rgb(0, 0, 255));
+    padding-bottom: 100px;
+    display:flex;
+    flex-direction: column;
+
+}
+.fit{
+    object-fit: cover;
+}
+.nadpis_dva{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 40px;
+    position: relative;
+}
+.nadpis_dva::after{
+    content:"";
+    background-color: #6030b1;
+    width:150px;
+    height:5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:-20px;
+
+}
+.container_tri{
+    width:100%;
+    margin: 0 auto;
+}
+.row_tri{
+    width:100%;
+    max-width: 1500px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.sloupec_tri{
+    width:100%;
+    max-width: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 250px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    transition: all 350ms ease;
+    padding-bottom: 30px;
+    padding: 0 30px;
+   
+}
+
+.sloupec_tri:hover{
+    transform: translateY(-10px);
+}
+
+.sloupec_tri img{
+    width:100%;
+    max-width: 50px;
+    border-radius: 50%;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+.sloupec_tri p{
+    height: 100%;
+    min-height: 70px;
+    color:white;
+    font-weight: bold;
+}
+.sloupec_tri h3{
+    font-size: 18px;
+    color:white;
+}
+.fa.fa-quote-left{
+    font-size: 35px;
+    color:orangered;
+}
+.fa.fa-star{
+    color:orangered;
+    font-size: 15px;
+}
+.nadpis{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.prodejna_image{
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap:20px;
+}
+.prodejna_image img{
+    width:100%;
+    max-width: 500px;
+    min-height: 250px;
+    max-height: 250px;
+    transition: 1s;
+    
+   
+}
+.prodejna_image img:hover{
+    transform: scale(1.2);
+    
+}
+
+/*SPONZORI*/
+
+#sponzori{
+    width:100%;
+    
+    
+
+}
+.container_ctyri{
+    width:100%;
+
+}
+.row_ctyri{
+    width:100%;
+    max-width: 1500px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:  0 auto;
+}
+.sloupec_ctyri{
+    width:100%;
+    max-width: 300px;
+}
+.sloupec_ctyri img{
+    width:100%;
+    max-width: 170px;
+    max-height: 200px;
+    cursor: pointer;
+    
+    
+}
+
+
+
+/*INSTAGRAM*/
+#instagram{
+    width:100%;
+
+}
+
+.container_instagram{
+    width:100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container_instagram h3{
+    color:#6030b1;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.gallery img{
+    max-width: 350px;
+    width: 100%;
+}
+.gallery{
+    display:flex;
+    justify-content: center;
+    gap:0.25rem;
+    transform: preserve-3d;
+    pointer-events: none;
+}
+.gallery-panel{
+    flex:1;
+    aspect-ratio: 1 / 1.5;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: 1s;
+    width:100%;
+    max-width: 350px;
+    
+
+    -webkit-box-reflect: below 4px
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,0.15)
+    );
+
+
+}
+.gallery-panel img{
+    width:100%;
+    aspect-ratio: 1 / 1.5;
+    object-fit: cover;
+    border-radius: 4px;
+
+}
+.gallery-panel:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 25px 5px rgba(0,0,0,0.5);
+}
+.gallery:hover > :not(:hover){
+    margin-inline: -1.5rem;
+    transform:
+    perspective(400px)
+    rotateY(30deg)
+    scale(0.8);
+}
+.gallery-panel:hover ~ .gallery-panel{
+    transform: 
+    perspective(400px)
+    rotateY(-30deg)
+    scale(0.8);
+}
+
+@media(max-width:768px){
+    .prodejna_image img{
+        width:100%;
+        max-width: 400px;
+    }
+    .prodejna_image{
+        flex-direction: column-reverse;
+    }
+    .sloupec_tri{
+        width:100%;
+        max-width: 300px;
+        
+    }
+    .sloupec_ctyri img{
+        width:100%;
+        max-width: 120px;
+    }
+}
+
+@media(max-width:375px){
+    .prodejna_image img{
+        width:100%;
+        max-width: 300px;
+        object-fit: cover;
+    }
+    .row_tri{
+        flex-direction: column;
+    }
+    .sloupec_ctyri img{
+        width:100%;
+        max-width: 60px;
+    }
+    #hodnoceni{
+        padding-top: 50px;
+    }
+}
